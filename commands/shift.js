@@ -1,7 +1,7 @@
 const { prefix, guild } = require("../config.json");
 
 const shift = (args) => {
-	return "fake encrypted message";
+	return "fake SHIFT encrypted message";
 };
 module.exports = {
 	name: "shift",
