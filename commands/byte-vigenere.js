@@ -8,11 +8,11 @@ const decrypt = (args) => {
 };
 
 module.exports = {
-	name: "vigenere",
+	name: "byte-vigenere",
 	description:
-		"Vigenere Cipher - Encrypts/Decrypts your message using Vigenere Cipher. Creates a new text channel with the encrypted text and specified users",
+		"Byte-wise Vigenere Cipher - Encrypts/Decrypts your message using Vigenere Cipher. Creates a new text channel with the encrypted text and specified users",
 	example:
-		"!vigenere {word} {encrypt/decrypt} {text} \n ex: !vigenere apples encrypt hello world",
+		"!byte-vigenere {bytes} {encrypt/decrypt} {text} \n ex: !vigenere 1010 encrypt hello world",
 	execute(message, args) {
 		if (message.channel.name === "secret-encryption-channel") {
 			//proceed, we are in secret channel

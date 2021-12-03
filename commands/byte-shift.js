@@ -1,18 +1,18 @@
 const { prefix, guild } = require("../config.json");
 
 const encrypt = (args) => {
-	return "fake VIGENERE encrypted message";
+	return "fake SHIFT encrypted message";
 };
 const decrypt = (args) => {
-	return "fake VIGENERE decrypted message";
+	return "fake SHIFT decrypted message";
 };
 
 module.exports = {
-	name: "vigenere",
+	name: "byte-shift",
 	description:
-		"Vigenere Cipher - Encrypts/Decrypts your message using Vigenere Cipher. Creates a new text channel with the encrypted text and specified users",
+		"Byte-wise Shift Cipher - shifts your message by a given number of bytes. Creates a new text channel with the encrypted text and specified users",
 	example:
-		"!vigenere {word} {encrypt/decrypt} {text} \n ex: !vigenere apples encrypt hello world",
+		"!byte-shift {number of bytes to shift by} {encrypt/decrypt} {byte message} \n ex: !shift 11001110 encrypt 00011010 00011010 00011010",
 	execute(message, args) {
 		if (message.channel.name === "secret-encryption-channel") {
 			//proceed, we are in secret channel
