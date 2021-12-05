@@ -30,7 +30,7 @@ module.exports = {
 	description:
 		"Byte-wise Shift Cipher - shifts your message by a given number of bytes. Creates a new text channel with the encrypted text and specified users",
 	example:
-		"!byte-shift {number of bytes to shift by} {encrypt/decrypt} {byte message} \n ex: !shift 11001110 encrypt 00011010 00011010 00011010",
+		"!byte-shift {number of bytes to shift by} {encrypt/decrypt} {byte message} \nEx: !shift 11001110 encrypt 00011010 00011010 00011010",
 	execute(message, args) {
 		if (message.channel.name === "secret-encryption-channel") {
 			if (args[1] === "encrypt") {

@@ -60,7 +60,7 @@ module.exports = {
 	description:
 		"Shift cipher - shifts your message by a given number of characters. Creates a new text channel with the encrypted text and specified users",
 	example:
-		"!shift {number to shift by} {encrypt/decrypt} {text} \n ex: !shift 10 encrypt hello world",
+		"!shift {number to shift by} {encrypt/decrypt} {text} \nEx: !shift 10 encrypt hello world",
 	execute(message, args) {
 		if (message.channel.name === "secret-encryption-channel") {
 			if (args[1] === "encrypt") {
