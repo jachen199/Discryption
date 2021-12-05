@@ -13,16 +13,7 @@ const encrypt = (args) => {
 	return text;
 };
 const decrypt = (args) => {
-	binaryShift = parseInt(args[0], 2);
-	args.shift();
-	args.shift();
-	words = args;
-	text = "";
-	for (word of words) {
-		text += Number(parseInt(word, 2) ^ binaryShift).toString(2);
-		text += " ";
-	}
-	return text;
+	return encrypt(args);
 };
 
 module.exports = {
