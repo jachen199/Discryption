@@ -1,11 +1,9 @@
 const { prefix, guild } = require("../config.json");
 
 const encrypt = (args) => {
-	wordShift = args[0];
+	wordShift = args.shift();
 	wordIndex = 0;
-	args.shift();
-	args.shift();
-	words = args.join(" ");
+	words = args.splice(1).join(" ");
 	text = "";
 	for (char of words) {
 		if (char.charCodeAt() == 32) {
@@ -21,6 +19,7 @@ const encrypt = (args) => {
 	}
 	return text;
 };
+
 const decrypt = (args) => {
 	return encrypt(args);
 };
@@ -89,7 +88,7 @@ module.exports = {
 										encryptedText = encrypt(args);
 										channel.send(
 											"This message is for the following users: " +
-												users
+											users
 										);
 										channel.send(encryptedText);
 										message.channel.send(

@@ -1,11 +1,9 @@
 const { prefix, guild } = require("../config.json");
 
 const encrypt = (args) => {
-	wordShift = args[0].toUpperCase();
+	wordShift = args.shift().toUpperCase();
 	wordIndex = 0;
-	args.shift();
-	args.shift();
-	words = args.join(" ");
+	words = args.splice(1).join(" ");
 	text = "";
 	for (char of words) {
 		charNum = char.charCodeAt();
@@ -31,11 +29,9 @@ const encrypt = (args) => {
 	return text;
 };
 const decrypt = (args) => {
-	wordShift = args[0].toUpperCase();
+	wordShift = args.shift().toUpperCase();
 	wordIndex = 0;
-	args.shift();
-	args.shift();
-	words = args.join(" ");
+	words = args.splice(1).join(" ");
 	text = "";
 	for (char of words) {
 		charNum = char.charCodeAt();

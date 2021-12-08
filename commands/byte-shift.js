@@ -1,14 +1,11 @@
 const { prefix, guild } = require("../config.json");
 
 const encrypt = (args) => {
-	binaryShift = parseInt(args[0], 2);
-	args.shift();
-	args.shift();
-	words = args;
+	binaryShift = parseInt(args.shift(), 2);
+	words = args.splice(1);
 	text = "";
 	for (word of words) {
-		text += Number(parseInt(word, 2) ^ binaryShift).toString(2);
-		text += " ";
+		text += Number(parseInt(word, 2) ^ binaryShift).toString(2) + " ";
 	}
 	return text;
 };

@@ -1,56 +1,42 @@
 const { prefix, guild } = require("../config.json");
 
 const encrypt = (args) => {
-	numShift = parseInt(args[0]) % 26;
-	args.shift();
-	args.shift();
-	words = args;
+	numShift = parseInt(args.shift()) % 26;
+	words = args.splice(1).join(" ");
 	text = "";
-	for (word of words) {
-		for (char of word) {
-			charNum = char.charCodeAt();
-			if (charNum == 32) {
-				newCharNum = 32;
-			} else {
-				newCharNum = charNum + numShift;
-				if (charNum >= 97 && charNum <= 122 && newCharNum > 122) {
-					newCharNum -= 26;
-				} else {
-					if (charNum >= 65 && charNum <= 90 && newCharNum >= 90) {
-						newCharNum -= 26;
-					}
-				}
+	for (char of words) {
+		charNum = char.charCodeAt();
+		if (charNum == 32) {
+			newCharNum = 32;
+		} else {
+			newCharNum = charNum + numShift;
+			if (charNum >= 97 && charNum <= 122 && newCharNum > 122) {
+				newCharNum -= 26;
+			} else if (charNum >= 65 && charNum <= 90 && newCharNum >= 90) {
+				newCharNum -= 26;
 			}
-			text += String.fromCharCode(newCharNum);
 		}
-		text += " ";
+		text += String.fromCharCode(newCharNum);
 	}
 	return text;
 };
 const decrypt = (args) => {
-	numShift = parseInt(args[0]) % 26;
-	args.shift();
-	args.shift();
-	words = args;
+	numShift = parseInt(args.shift()) % 26;
+	words = args.splice(1).join(" ");
 	text = "";
-	for (word of words) {
-		for (char of word) {
-			charNum = char.charCodeAt();
-			if (charNum == 32) {
-				newCharNum = 32;
-			} else {
-				newCharNum = charNum - numShift;
-				if (charNum >= 97 && charNum <= 122 && newCharNum < 97) {
-					newCharNum += 26;
-				} else {
-					if (charNum >= 65 && charNum <= 90 && newCharNum < 65) {
-						newCharNum += 26;
-					}
-				}
+	for (char of words) {
+		charNum = char.charCodeAt();
+		if (charNum == 32) {
+			newCharNum = 32;
+		} else {
+			newCharNum = charNum - numShift;
+			if (charNum >= 97 && charNum <= 122 && newCharNum < 97) {
+				newCharNum += 26;
+			} else if (charNum >= 65 && charNum <= 90 && newCharNum < 65) {
+				newCharNum += 26;
 			}
-			text += String.fromCharCode(newCharNum);
 		}
-		text += " ";
+		text += String.fromCharCode(newCharNum);
 	}
 	return text;
 };

@@ -1,19 +1,21 @@
 const { prefix, token } = require("./config.json");
 const fs = require("fs");
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
-
 client.commands = new Discord.Collection();
-
 client.once("ready", () => {
-	console.log("Ready!");
+	console.log("Discord bot is online and ready");
 });
-
 client.login(token);
+
+// Easily add more ciphers in the commands folder
 const commandFiles = fs
 	.readdirSync("./commands")
 	.filter((file) => file.endsWith(".js"));
 
+// Add all the commands to a Collection (dictionary)
+// stored on the Discord Object
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
 	client.commands.set(command.name, command);
@@ -33,7 +35,6 @@ function getHelp(message) {
 
 client.on("message", (message) => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
-
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const command = args.shift().toLowerCase();
 
