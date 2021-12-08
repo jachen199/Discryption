@@ -8,15 +8,18 @@ Discryption is a bot and requires a machine to run it. To launch the bot:
         node index.js
     5. If you see:
         Discord bot is online and ready
-    Then you are all set. 
+    Then terminate the bot and then continue with adding the bot to your personal server.
     If you do not see it, please contact me at jchen199@syr.edu and I can run the bot while it is in use. 
 
 To add Discryption to your server: 
     1. Go to https://discord.com/app and log into your Discord account
     2. On the left hand side, click on the + icon to create a new server that you want to use Discryption in
-    3. Go to https://discord.com/api/oauth2/authorize?client_id=915245122956955749&permissions=8&scope=bot, and then select the server you just created
-    4. You are now all set up and can use Discryption.
-
+    3. Open up the settings on the bottom left. Go to Advanced and enable Developer Mode.
+    4. Right click the server you just created and click copy ID.
+    5. Open config.json and replace the string for guild with the ID you just copied. 
+    6. Go to https://discord.com/api/oauth2/authorize?client_id=915245122956955749&permissions=8&scope=bot, and then select the server you just created.
+    7. Launch the bot once again (node index.js)
+    You are now all set up and can use Discryption.
 
 Using the bot:
     1. In the general text channel, you can type:

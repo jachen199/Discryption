@@ -1,4 +1,4 @@
-const { prefix, guild } = require("../config.json");
+const { prefix, guild} = require("../config.json");
 
 const encrypt = (args) => {
 	numShift = parseInt(args.shift()) % 26;
@@ -105,7 +105,7 @@ module.exports = {
 										encryptedText = encrypt(args);
 										channel.send(
 											"This message is for the following users: " +
-												users
+											users
 										);
 										channel.send(encryptedText);
 										message.channel.send(

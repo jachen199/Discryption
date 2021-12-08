@@ -1,5 +1,3 @@
-const { guild } = require("../config.json");
-
 module.exports = {
 	name: "addusers",
 	description: "Add users to send the encrypted message to",
