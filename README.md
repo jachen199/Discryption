@@ -5,9 +5,9 @@ This project was made by Jackie Chen and Liam Calnan
 >    2. Ensure you have NodeJS installed on your machine - https://nodejs.org/en/
 >    3. Open a terminal and head to the folder for the repo you just downloaded
 >    4. Run the command:
-        node index.js
+        ```node index.js```
 >    5. If you see:
-        Discord bot is online and ready
+        ```Discord bot is online and ready```
 >    Then terminate the bot and then continue with adding the bot to your personal server.
 >    If you do not see it, please contact me at jchen199@syr.edu and I can run the bot while it is in use. 
 
@@ -23,19 +23,19 @@ This project was made by Jackie Chen and Liam Calnan
 
 >Using the bot:
 >    1. In the general text channel, you can type:
->        !help
+>        ```!help```
 >    to see all the commands the discord bot currently accepts.
 >    2. To get started, type:
->        !encrypt 
+>        ```!encrypt``` 
 >    This will create a new text channel where you can test the various ciphers. Follow the instructions the bot gives you. 
 
 >Example of running a shift cipher:
->    1. Type '!encrypt' in the general text channel
+>    1. Type ```!encrypt``` in the general text channel
 >    2. Head to the secret-encryption-channel that just got created on the left side of the screen
->    3. Type '!addusers @everyone' to send your encrypted message to everyone, or you can send it to specific people only by mentioning them.
->    4. Type '!shift 10 encrypt hello world' to encrypt the text 'hello world' using a shift cipher, where you shift it by 10. 
+>    3. Type ```!addusers @everyone``` to send your encrypted message to everyone, or you can send it to specific people only by mentioning them.
+>    4. Type ```!shift 10 encrypt hello world``` to encrypt the text 'hello world' using a shift cipher, where you shift it by 10. 
 >    5. Head to the encrypted-text channel where you can see the encrypted text.
->    6. Type '!decrypt' to begin decrypting this message
+>    6. Type ```!decrypt``` to begin decrypting this message
 >    7. Head to the secret-decryption-channel that just got created
->    8. Type '!shift 10 decrypt ', followed by the encrypted text. 
+>    8. Type ```!shift 10 decrypt ```, followed by the encrypted text. 
 >    9. You should now see the decrypted text. 
