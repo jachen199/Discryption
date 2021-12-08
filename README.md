@@ -5,9 +5,9 @@ This project was made by Jackie Chen and Liam Calnan
 >    2. Ensure you have NodeJS installed on your machine - https://nodejs.org/en/
 >    3. Open a terminal and head to the folder for the repo you just downloaded
 >    4. Run the command:
->        node index.js
+        node index.js
 >    5. If you see:
->        Discord bot is online and ready
+        Discord bot is online and ready
 >    Then terminate the bot and then continue with adding the bot to your personal server.
 >    If you do not see it, please contact me at jchen199@syr.edu and I can run the bot while it is in use. 
 
