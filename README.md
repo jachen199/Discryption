@@ -9,7 +9,7 @@ This project was made by Jackie Chen and Liam Calnan
         ```node index.js```
 >    6. If you see:
         ```Discord bot is online and ready```
->    Then terminate the bot and then continue with adding the bot to your personal server.
+>    then terminate the bot and then continue with adding the bot to your personal server.
 >    If you do not see it, please contact me at jchen199@syr.edu and I can run the bot while it is in use. 
 
 >To add Discryption to your server: 
@@ -28,7 +28,7 @@ This project was made by Jackie Chen and Liam Calnan
 >    to see all the commands the discord bot currently accepts.
 >    2. To get started, type:
 >        ```!encrypt``` 
->    This will create a new text channel where you can test the various ciphers. Follow the instructions the bot gives you. 
+>    . This will create a new text channel where you can test the various ciphers. Follow the instructions the bot gives you. 
 
 >Example of running a shift cipher:
 >    1. Type ```!encrypt``` in the general text channel
