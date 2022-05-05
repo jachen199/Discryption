@@ -10,7 +10,7 @@ This project was made by Jackie Chen and Liam Calnan
 >    6. If you see:
         ```Discord bot is online and ready```
 >    then terminate the bot and then continue with adding the bot to your personal server.
->    If you do not see it, please contact me at jchen199@syr.edu and I can run the bot and give you an invite to the Discord server we used where it is up and working. 
+>    If you do not see it, please contact me at jachen199@gmail.com and I can run the bot and give you an invite to the Discord server we used where it is up and working. 
 
 >To add Discryption to your server: 
 >    1. Go to https://discord.com/app and log into your Discord account
