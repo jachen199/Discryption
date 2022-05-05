@@ -2,7 +2,7 @@ This project was made by Jackie Chen and Liam Calnan
 
 >Discryption is a bot and requires a machine to run it. To launch the bot:
 >    1. Download all the files in this repo - https://github.com/jachen199/Discryption
->    2. Head to config.json and insert the token I provided in ```token.txt``` in the submission.
+>    2. Head to config.json and insert your discord bot token.
 >    3. Ensure you have NodeJS installed on your machine - https://nodejs.org/en/
 >    4. Open a terminal and head to the folder for the repo you just downloaded
 >    5. Run the command:
